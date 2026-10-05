@@ -12,23 +12,26 @@
 .cabecalho-logo p {
   margin-top: 10px;
   color: #64748b;
-  font-size: 14px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .menu {
   margin-top: 25px;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 15px 0;
-  border-top: 1px solid #e2e8f0;
+  gap: 35px;
+  padding: 16px 30px;
+  background-color: #0f172a;
+  border-radius: 8px;
 }
 
 .menu a {
-  color: #0f172a;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .destaque-conteudo h1 {
@@ -156,4 +159,117 @@
 .tempo {
   color: #94a3b8;
   font-size: 12px;
+}
+
+.newsletter {
+  background-color: #0f172a;
+  padding: 50px 30px;
+  margin-top: 60px;
+}
+
+.newsletter-conteudo {
+  max-width: 1140px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.newsletter h2 {
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.newsletter p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  width: 280px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rodape {
+  background-color: #0f172a;
+  border-top: 40px solid #f8fafc;
+  padding: 40px 30px 20px;
+}
+
+.rodape-conteudo {
+  max-width: 1140px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.rodape-marca h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.rodape-marca h2 span {
+  color: #60a5fa;
+}
+
+.rodape-marca p {
+  margin-top: 8px;
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.rodape-links {
+  display: flex;
+  gap: 25px;
+}
+
+.rodape-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.rodape-final {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid #334155;
+  text-align: center;
+}
+
+.rodape-final p {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+
+
 }
