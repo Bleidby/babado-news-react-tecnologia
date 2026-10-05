@@ -1,5 +1,13 @@
 # Babado News - Tecnologia
 
+## Deploy
+
+O projeto está publicado no Netlify:
+
+https://babado-news-tecnologia.netlify.app
+
+---
+
 ## Sobre o projeto
 
 O **Babado News** é um projeto acadêmico desenvolvido durante o curso de **Análise e Desenvolvimento de Sistemas (ADS)**.
