@@ -272,4 +272,41 @@
 
 
 
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .destaque-principal {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-destaques {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-tecnologia {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-conteudo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+
+  .rodape-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu {
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding: 14px 20px;
 }
