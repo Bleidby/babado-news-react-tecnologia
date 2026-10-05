@@ -1,120 +1,115 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
+import TechnologyCard from './components/TechnologyCard.jsx'
+
+const noticiasTecnologia = [
+  {
+    imagem: '/img/ai.jpg',
+    titulo: 'Tecnologia e inovação ganham destaque em 2026',
+    descricao:
+      'Inteligência artificial deixa de ser apenas tendência e passa a fazer parte da rotina de empresas e profissionais.',
+    tempo: 'Há 2 horas',
+  },
+  {
+    imagem: '/img/aitrab.png',
+    titulo: 'Inteligência artificial transforma o mercado de trabalho',
+    descricao:
+      'Novas ferramentas de inteligência artificial estão mudando profissões e a rotina de trabalhadores.',
+    tempo: 'Há 1 hora',
+  },
+  {
+    imagem: '/img/ailuta.png',
+    titulo: 'Revolução das máquinas?',
+    descricao:
+      'O avanço da robótica chama atenção e levanta discussões sobre a relação entre humanos e máquinas.',
+    tempo: 'Há 3 horas',
+  },
+  {
+    imagem: '/img/mao.png',
+    titulo: 'O futuro das próteses',
+    descricao:
+      'Avanços tecnológicos estão tornando as próteses cada vez mais modernas e funcionais.',
+    tempo: 'Há 30 minutos',
+  },
+]
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+      <header className="cabecalho">
+        <div className="cabecalho-logo">
+          <img src="/img/logo.png" alt="Babado News" />
+          <p>Informação rápida, opinião afiada.</p>
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
 
-      <div className="ticks"></div>
+      <nav className="menu">
+        <a href="#inicio">Início</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      </header>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      <main>
+  <section id="inicio" className="destaque-principal">
+    <div className="destaque-conteudo">
+      <span className="categoria">Tecnologia</span>
+
+      <h1>Tecnologia e inovação ganham destaque em 2026</h1>
+
+      <p>
+        Inteligência artificial deixa de ser apenas tendência e passa a fazer
+        parte da rotina de empresas e profissionais.
+      </p>
+    </div>
+
+    <img
+      src="/img/ai.jpg"
+      alt="Tecnologia e inteligência artificial"
+    />
+  </section>
+
+    <section id="destaques" className="secao-destaques">
+      <h2>Em destaque</h2>
+
+    <div className="grade-destaques">
+    <article className="card-destaque">
+      <span className="categoria">Tecnologia</span>
+      <h3>Inteligência artificial transforma o mercado de trabalho</h3>
+      <p>
+        Novas ferramentas de inteligência artificial estão mudando profissões
+        e a rotina de trabalhadores.
+      </p>
+    </article>
+
+    <article className="card-destaque">
+      <span className="categoria">Tecnologia</span>
+      <h3>Revolução das máquinas?</h3>
+      <p>
+        O avanço da robótica chama atenção e levanta discussões sobre a relação
+        entre humanos e máquinas.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="tecnologia" className="tecnologia">
+  <h2>Babado News / Tecnologia</h2>
+
+  <div className="grade-tecnologia">
+    {noticiasTecnologia.map((noticia) => (
+      <TechnologyCard
+        key={noticia.titulo}
+        imagem={noticia.imagem}
+        titulo={noticia.titulo}
+        descricao={noticia.descricao}
+        tempo={noticia.tempo}
+      />
+    ))}
+  </div>
+</section>
+
+</main>
     </>
   )
 }
